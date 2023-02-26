@@ -1,9 +1,6 @@
-const filterElement = document.querySelector("header .content form input")
-const cards = document.querySelectorAll("main .content .cards .card")
+const filterElement = document.getElementById("name")
+const cards = document.getElementsByClassName("card")
 filterElement.addEventListener("input", filterCards)
-
-console.log(filterElement)
-
 function filterCards() {
   if (filterElement.value != "") {
     for (let card of cards) {
